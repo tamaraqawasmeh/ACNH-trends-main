@@ -1,5 +1,3 @@
-Scripts for Project Data Collection, Manip and cleaning
-
 ![alt text](https://github.com/limesarelife/SIADS_591_MILESTONE1/blob/main/BANNER-TEST-AC.png)
  
 First script Pytrends_ACNH_version2-4.ipynb takes the villagers names from villagers.csv and creates a list(appended Animal Crossing to the name for each item in the list) from the names which using the built in API function pulls the Google Trends Related Queries and fetches the historical searches per villager name. This is utilized via the pytrends library.  Returns a dictionary of the names searched and the "rising" key contains the 'query' (search conducted) and 'value' which is the number of all time searches related to the animal crossing villager name.  It then pulls out the rising and parses with for loop and dictionary to pull back and append queries and values of villagers names where there were searches on Google and append none's where villager had no google searches. Creates final csv, final_villager_list_v2.csv.
